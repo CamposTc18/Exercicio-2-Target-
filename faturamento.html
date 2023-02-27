@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Faturamento Diário</title>
+    </head>
+  <body>
+
+  <h2>Faturamento Diário</h2>
+
+    <div id="diario"> 
+
+    </div>
+
+    <script>
+        let divDiario = document.querySelector("#diario")
+        
+        fetch("dados.json").then((response) => {
+            response.json().then((diario) => {
+                console.log(diario)
+            })
+        })
+    </script>
+
+  </body>
+</html>
+
